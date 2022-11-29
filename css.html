@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 型態選擇器 */
+        /* span{
+            color:red;
+            font-size: 30px;
+        } */
+        /* Class選擇器(使用.符號) */
+        .one{
+            color: red;
+        }
+        .two{
+            background-color: yellow;
+        }
+        /* ID選擇器(使用#符號) */
+        #youtube{
+            color:green;
+        }
+        #three{
+            background-color: red;
+        }
+        /* 通用選擇器(使用*符號) */
+        *{
+            font-family: "標楷體";
+        }
+        /* 屬性選擇器 */
+        input[type=text]{
+            width: 50px;
+        }
+        /* 後代選擇器(使用空白符號)，子選擇器(使用>符號) */
+        div>a{
+            color: red;
+        }
+        /* 同層相鄰選擇器(使用+符號) */
+        /* ul+p{
+            color: yellow;
+        } */
+        /* 同層全體選擇器(使用~符號) */
+        ul~p{
+            color: green;
+        }
+        /* 偽類選擇器(使用:符號) */
+        .b1:hover{
+            color: red;
+        }
+        /* 偽元素選擇器(使用::符號) */
+        .c1::before{
+            content: "新增文字";
+        }
+        .c1::after{
+            content: "之後補上";
+        }
+        /* 群組選擇器(使用,符號) */
+        ul li,ol li{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h4>型態選擇器(html標籤)</h4>
+    <span>span</span>
+    <hr>
+    <h4>Class選擇器(使用.符號)</h4>
+    <a href="#" class="one two">google</a>
+    <hr>
+    <h4>ID選擇器(使用#符號)</h4>
+    <a href="#" id="youtube" class="two">youtube</a>
+    <a href="#" id="three">pchome</a>
+    <hr>
+    <h4>屬性選擇器</h4>
+    <input type="text">
+    <input type="button" value="按鈕">
+    <input type="text">
+    <hr>
+    <h4>後代選擇器(使用空白符號)，子選擇器(使用>符號)</h4>
+    <div>
+        <span>
+            <a href="#">div>span>a連結</a>
+        </span>
+    </div>
+    <div>
+        <a href="#">div>a連結</a>
+    </div>
+    <hr>
+    <h4>同層相鄰選擇器(使用+符號)</h4>
+    <ul>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+    </ul>
+    <p>p1</p>
+    <p>p2</p>
+    <p>p3</p>
+    <ul>
+        <li>D</li>
+        <li>E</li>
+        <li>F</li>
+    </ul>
+    <p>p4</p>
+    <p>p5</p>
+    <p>p6</p>
+    <span>span</span>
+    <p>p7</p>
+    <hr>
+    <h4>同層全體選擇器(使用~符號)</h4>
+    <hr>
+    <h4>偽類選擇器(使用:符號)</h4>
+    <a href="#" class="b1">偽類選擇器</a>
+    <hr>
+    <h4>偽元素選擇器(使用::符號)</h4>
+    <span class="c1">偽元素選擇器</span>
+    <hr>
+    <h4>群組選擇器(使用,符號)</h4>
+    <ul>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+    </ul>
+    <ol>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ol>
+    <hr>
+</body>
+</html>
